@@ -1,3 +1,5 @@
+package edu.upc.minimtardo;
+
 public class Producto {
 
     String nombre;
@@ -13,5 +15,10 @@ public class Producto {
     }
     public void cantidadAPedir(int cantidad){
         this.cantidad=cantidad;
+    }
+
+    @Override//Prueba para el REST
+    public String toString() {
+        return "Producto [nombre=" + nombre + ", precio=" + precio + "]";
     }
 }

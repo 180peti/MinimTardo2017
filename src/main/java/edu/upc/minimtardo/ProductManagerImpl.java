@@ -1,3 +1,5 @@
+package edu.upc.minimtardo;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.logging.Logger;
@@ -30,6 +32,14 @@ public class ProductManagerImpl implements ProductManager {
 
     public ArrayList<Pedido> getPedidostotales() {
         return pedidostotales;
+    }
+
+    public HashMap<String, Producto> getProductos() {
+        return productos;
+    }
+
+    public ArrayList<Pedido> getPedidosUsuario(String nombre){
+        return usuarios.get(nombre).getPedidos();
     }
 
     public void añadirProducto(Producto a){

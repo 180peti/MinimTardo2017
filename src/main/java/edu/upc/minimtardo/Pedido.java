@@ -1,5 +1,5 @@
-import javax.swing.*;
-import java.util.ArrayList;
+package edu.upc.minimtardo;
+
 import java.util.HashMap;
 
 public class Pedido {
@@ -19,8 +19,8 @@ public class Pedido {
     public String getNombreUsuario() {
         return nombreUsuario;
     }
-    /*public Pedido(String[] productos, int[] cantidad){
-        this.productos=new HashMap<String,Producto>();
+    /*public edu.upc.minimtardo.Pedido(String[] productos, int[] cantidad){
+        this.productos=new HashMap<String,edu.upc.minimtardo.Producto>();
         if (productos.length==cantidad.length)
         for (int i=0;i<productos.length;i++)
         {

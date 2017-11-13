@@ -1,3 +1,6 @@
+import edu.upc.minimtardo.ProductManagerImpl;
+import edu.upc.minimtardo.Producto;
+import edu.upc.minimtardo.Usuario;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -11,7 +14,7 @@ public class ProductManagerImplTest {
 
     @Before
     public void setUp() throws Exception {
-        test=ProductManagerImpl.getInstance();
+        test= ProductManagerImpl.getInstance();
 
         Producto a=new Producto("Leche",10);
         test.añadirProducto(a);

@@ -1,3 +1,5 @@
+package edu.upc.minimtardo;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 
